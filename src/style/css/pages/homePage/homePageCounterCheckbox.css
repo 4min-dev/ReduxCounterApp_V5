@@ -1,0 +1,17 @@
+.homePageCounterCheckboxContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#delayButton {
+    position: relative;
+    cursor: pointer;
+    margin:10px 0px 0px 0px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

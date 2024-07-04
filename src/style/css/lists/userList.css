@@ -1,0 +1,66 @@
+@keyframes shakeAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(-10deg)
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.userList {
+    position: relative;
+    padding:20px;
+    border-radius: 15px;
+    background: #32A875;
+    margin:100px 20px 100px 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+    width: auto;
+    height: auto;
+}
+
+.userInteraction {
+    position: absolute;
+    right:20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.userInteraction > img {
+    width: 50px;
+    height: 50px;
+}
+
+.userInteraction > .uiInteractionWithUserButtons > #deleteUserButton, .userInteraction > .uiInteractionWithUserButtons > #editUserButton {
+    width: 50px;
+    height: 50px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background:none;
+    margin-top: 20px;
+    transition: all,0.4s;
+    animation: shakeAnim ease-in 2s alternate-reverse ;
+}
+
+.userInteraction > .uiInteractionWithUserButtons > #deleteUserButton:hover, .userInteraction > .uiInteractionWithUserButtons > #editUserButton:hover {
+    animation: shakeAnimation .4s linear;
+}
+
+.userInteraction > .uiInteractionWithUserButtons > #deleteUserButton > img, .userInteraction > .uiInteractionWithUserButtons > #editUserButton > img {
+    width: 100%;
+    height: 100%;
+}
+
+.userInteraction > .uiInteractionWithUserButtons {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,13 @@
+.closePopupButton {
+    background:none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: rotate,.4s;
+    cursor: pointer;
+    border:none;
+    outline: none;
+}
+
+.closePopupButton:hover {
+    rotate:-180deg
+}

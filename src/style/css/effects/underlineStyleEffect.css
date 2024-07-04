@@ -1,0 +1,14 @@
+@media (hover:hover) {
+    .underlineStyleEffect::before {
+        position: absolute;
+        content: '';
+        width: 0;
+        bottom:-5px;
+        border-bottom: 2px solid black;
+        transition: all,.4s;
+    }
+    
+    .underlineStyleEffect:hover::before {
+        width: 100%;
+    }
+}

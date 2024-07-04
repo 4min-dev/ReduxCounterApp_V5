@@ -1,0 +1,7 @@
+.editUserForm {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:-400px;
+    z-index: 999;
+}

@@ -1,0 +1,27 @@
+.personaluserInfoUserForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personaluserInfoUserForm > #handleAddNewUserButton {
+    background:#32a875;
+    color:black;
+    font-size: 16px;
+    padding:15px 10px 15px 10px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.personaluserInfoUserForm > #handleAddNewUserButton:not(:disabled) {
+    cursor: pointer;
+    transition: border-radius,.4s;
+}
+
+.personaluserInfoUserForm > #handleAddNewUserButton:disabled {
+    opacity:60%
+}
+
+.personaluserInfoUserForm > #handleAddNewUserButton:not(:disabled):hover {
+    border-radius: 10px
+}
